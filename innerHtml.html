@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=id, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    .flex-box{
+      display : flex;
+      flex-flow : row wrap;
+      justify-content: space-between;
+      align-items: space-between;
+
+      border : 1px solid black;
+      padding : 10px;
+
+
+      width: 800px;
+      height: 400px;
+    }
+    .box{
+      width : 90px;
+      height: 90px;
+
+      background-color: skyblue;
+      text-align : center;
+
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class = "flex-box"></div>
+  <button >box추가</button>
+
+  <script>
+    const addButton = document.querySelector("button");
+    
+    let count = 0;
+    
+    addButton.onclick = () => {
+      const flexBox = document.querySelector(".flex-box");
+      count ++;
+      flexBox.innerHTML +=`<div class = "box">${count}</div>`;  // ` :백커터?
+      //innerText는 text자료만 나열, 인라인요소에만 적용.
+      // += 에서 + 빼면 덮어쓰기가 된다.
+    }
+  </script>
+
+</body>
+</html>

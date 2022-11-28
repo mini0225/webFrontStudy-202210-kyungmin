@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .box1{
+          box-sizing : border-box;
+
+
+          margin: 50px;
+          border: 1px solid red;
+          border-width: 1px 2px 3px 4px; /*여기서 따로 줄 수 있음. 다이캐스팅이라 위에서 설정되어도 밑에서 바뀜.*/
+          padding : 5px 10px 15px ; /* 순서대로 top right bottom left 임,
+          무조건 대칭으로 되기 때문에 5,10,15 인 경우 좌우 간격이 10으로 된다
+          border, margin 다 적용임.*/
+          
+          /*margin- , border- , padding - + top, right, bottom, left 각각 줄 수 있음.*/
+
+          width : 200px;
+          height : 200px;
+
+          background-color: black;
+
+      }
+
+  </style>
+</head>
+<body> <!-- 실행시켰을때 범위확인 단축키 control + shift + c -->
+    <div class="box1"></div>
+</body>
+</html>

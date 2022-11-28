@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id = "container"> <!--id 딱 하나만 -->
+    <div class = "box">box1</div> <!--class는 중복가능, css중복적용시에 사용-->
+    <div class = "box">box2</div>
+    <div class = "box">box3</div>
+    <h1>A</h1>
+    <h1>B</h1>
+    <h1>C</h1>
+    <h1>D</h1>
+
+  </div>
+
+  <script>
+    const a = document.getElementById("container"); //ID 등록이니까....? container의 모든 정보를 등록함 주석까지.
+    const box1 = document.getElementsByClassName("box")[0]; //배열.!!
+    const h1 = document.getElementsByTagName("h1")[1];
+
+    // console.log(a);
+    // console.log(box1);
+    
+
+    box1.onclick = () => {
+      alert("box1을 클릭하셨습니다");
+    }
+
+    h1.onclick = () =>{
+      alert(h1.textContent);
+
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <style>
+      .box1{
+          position : relative; /*기준이되는 요소???*/
+          
+          /*relative 를 줘야 top left right bottom 이 먹힌다.*/
+          /*top 을 적용시켰을 때느 bottom 을 주면 안된다 다이캐스팅??뭐라더라 
+          그게 적용되서 나중에 쓴 bottom이 기준이 된다
+          top : 300px = bottom:-300px*/
+          /*left 도 마찬가지. right 적용하면 안댐.*/
+
+          width: 200px;
+          height: 200px;
+
+          background-color: red;
+      }
+      .box2{
+          position : absolute; /*내가 원하는 위치에 놓을 수 있다.*/
+          right : 100px; 
+          
+          
+          width: 50px;
+          height: 50px;
+
+          background-color: black;
+      }
+
+      *{
+        box-sizing: border-box;
+      }
+
+      
+  </style> -->
+  <link rel="stylesheet" href="/css/position.css">
+  
+</head>
+<body>
+    <!-- <div class="box1">
+      <div class="box2"></div>
+    </div> -->
+    <div id="container">
+        <div class="inputs">
+            <input type="text" class="input-phone" placeholder="전화번호 입력">
+            <button type="button" class="phone-valid">인증요청</button>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

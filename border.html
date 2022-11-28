@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .box1{
+          border: 1px solid red;
+          border-radius: 50px;
+          padding : 50px; /*잘리는 padding 값 추가 해줌으로써 안으로 옮겨서 안 잘리게 가능*/
+          width : 200px;
+          height : 200px;
+          overflow: hidden; /*짤리는거 삭제*/
+      }
+      .box2{
+          box-sizing: border-box;
+
+          margin : 10px auto; /*남은 여백 알아서 반띵 = 좌우만 가운데 정렬*/
+          border : 2px solid black ;
+          border-radius: 50%; /*원ㅋㅋ*/
+          padding-left : 90px;
+          width : 500px;
+          height : 600px;
+
+          overflow: hidden;
+
+      }
+      .back-img{
+          width : 300px;
+      }
+
+  </style>
+</head>
+<body>
+    <div class="box1">글자</div>  <!-- 글자가 있다고 radius 넘어가는걸 안으로 옮길수 없다.-->
+    <div class="box2">
+        <img src="/images/다운로드.png" class="back-img">
+    </div>
+</body>
+</html>
